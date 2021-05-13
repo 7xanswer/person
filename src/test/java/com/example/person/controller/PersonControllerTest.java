@@ -24,7 +24,7 @@ public class PersonControllerTest{
 
         RestTemplate restTemplate = new RestTemplate();
 
-        final String baseUrl = "http://127.0.0.1:8080/api/persons/609d1685489df162dbb403cf";
+        final String baseUrl = "http://127.0.0.1:8080/api/persons/609d89b93e5e577b068a85ae";
 
         URI uri = new URI(baseUrl);
  
