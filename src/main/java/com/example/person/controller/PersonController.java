@@ -51,7 +51,7 @@ public class PersonController {
   @GetMapping("/persons/{id}")
   public ResponseEntity<Person> getPersonById(@PathVariable("id") String id) {
     Optional<Person> personData = personRepository.findById(id);
-
+  
     if (personData.isPresent()) {
       return new ResponseEntity<>(personData.get(), HttpStatus.OK);
     } else {
