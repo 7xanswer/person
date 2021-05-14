@@ -25,11 +25,15 @@ This will help you with project stability and avoid you to interfere with the co
 # Running the project
 
 After clonning the project and opening it into your favorite editor.
-Open up the CLI and run : mvn spring-boot:run or mvwn spring-boot:run
+Open up the CLI and run :
+- mvn spring-boot:run or mvwn spring-boot:run
 This commands will run every things the system needs to works.
 
-Also you might want to run in the CLI : curl http://localhost:8080/api/persons, to see the web application. 
+Also you might want to run in the CLI : 
+- curl http://localhost:8080/api/persons
+This command allow's you to see the web application. 
 
 # Running test 
 
-Todo
+To run SonarQube test :
+- mvn sonar:sonar -Dsonar.host.url=http://sonarcloud.io/ -Dsonar.organization=47a91c90c3acd7a9297609e82b4b5dc4 -Dsonar.login=16f2e2bfa17c4fca713e6d0ec8bcc606413ea0d0
