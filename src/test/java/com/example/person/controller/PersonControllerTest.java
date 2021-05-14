@@ -67,7 +67,7 @@ class PersonControllerTest{
     }
     @Test
     @When("^the client calls /api/persons$")
-    public void the_client_issues_GET_version() throws Throwable{
+    void the_client_issues_GET_version() throws Throwable{
 
         RestTemplate restTemplate = new RestTemplate();
 
@@ -80,7 +80,7 @@ class PersonControllerTest{
     }
     @Test
     @Then("^the client receives status code of (\\d+)$")
-    public void the_client_receives_status_code_of() throws Throwable {
+    void the_client_receives_status_code_of() throws Throwable {
         RestTemplate restTemplate = new RestTemplate();
 
         final String baseUrl = "http://127.0.0.1:8080/api/persons";
