@@ -41,7 +41,7 @@ public class Person {
     this.name = name;
   }
 
-  public String getPrenon() {
+  public String getPrenom() {
     return prenom;
   }
 

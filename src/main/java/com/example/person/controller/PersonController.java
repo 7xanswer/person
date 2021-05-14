@@ -63,7 +63,7 @@ public class PersonController {
   @PostMapping("/persons")
     public ResponseEntity<Person> createPerson(@RequestBody Person person) {
         try {
-            Person _person = personRepository.save(new Person(person.getName(), person.getPrenon(),person.getCode(),person.getDate(),person.getEmail(),person.getPhone()));
+            Person _person = personRepository.save(new Person(person.getName(), person.getPrenom(),person.getDate(),person.getCode(),person.getEmail(),person.getPhone()));
             return new ResponseEntity<>(_person, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -87,7 +87,7 @@ public class PersonController {
     if (personData.isPresent()) {
       Person _person = personData.get();
       _person.setName(person.getName());
-      _person.setPrenom(person.getPrenon());
+      _person.setPrenom(person.getPrenom());
       _person.setCode(person.getCode());
       _person.setDate(person.getDate());
       _person.setEmail(person.getEmail());

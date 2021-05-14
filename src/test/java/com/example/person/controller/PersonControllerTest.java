@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features")
-public class PersonControllerTest{
+class PersonControllerTest{
 
   @Autowired
     PersonController personController;
@@ -36,7 +36,7 @@ public class PersonControllerTest{
 
         RestTemplate restTemplate = new RestTemplate();
 
-        final String baseUrl = "http://127.0.0.1:8080/api/persons/609d89b93e5e577b068a85ae";
+        final String baseUrl = "http://127.0.0.1:8080/api/persons/609e6269cbef205664826e6a";
 
         URI uri = new URI(baseUrl);
  
@@ -65,7 +65,7 @@ public class PersonControllerTest{
         List<Person> personne = personRepository.findByName("Ruchalski");
 
     }
-
+    @Test
     @When("^the client calls /api/persons$")
     public void the_client_issues_GET_version() throws Throwable{
 
@@ -78,7 +78,7 @@ public class PersonControllerTest{
         ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);
         Assertions.assertNotEquals(404, result.getStatusCodeValue());
     }
-
+    @Test
     @Then("^the client receives status code of (\\d+)$")
     public void the_client_receives_status_code_of() throws Throwable {
         RestTemplate restTemplate = new RestTemplate();
