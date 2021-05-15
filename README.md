@@ -1,6 +1,10 @@
-# person
- 
-Rapport SonarQube : https://sonarcloud.io/dashboard?id=com.example%3Aperson
+## person
+
+# Contributors
+
+- Théo Helary
+- Isaac Ruchalski
+- Guillaume Le Louarn
 
 # Application goal
 
@@ -35,7 +39,9 @@ Also you might want to run in the CLI :
 - curl http://localhost:8080/api/persons
 This command allow's you to see the web application. 
 
-# Running test 
+# Running test
+
+Rapport SonarQube : https://sonarcloud.io/dashboard?id=com.example%3Aperson
 
 To run SonarQube test :
 - mvn sonar:sonar -Dsonar.host.url=http://sonarcloud.io/ -Dsonar.organization=47a91c90c3acd7a9297609e82b4b5dc4 -Dsonar.login=16f2e2bfa17c4fca713e6d0ec8bcc606413ea0d0
