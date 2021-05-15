@@ -1,5 +1,3 @@
-## person
-
 # Contributors
 
 - Théo Helary
